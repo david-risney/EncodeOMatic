@@ -1,0 +1,23 @@
+{
+  "name": "encodeomatic",
+  "version": "1.0.0",
+  "description": "Web app for encoding and decoding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/david-risney/EncodeOMatic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/david-risney/EncodeOMatic/issues"
+  },
+  "homepage": "https://github.com/david-risney/EncodeOMatic#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.0",
+    "codepage": "^1.14.0"
+  }
+}
