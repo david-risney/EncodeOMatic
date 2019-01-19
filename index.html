@@ -12,15 +12,16 @@
   </head>
   <body class="fill borderless page">
     <div class="r1c1s3 borderless fill center">
-      <h1>Encode-O-Matic</h1>
+      <h1 id="title" class="monofont">Encode-O-Matic</h1>
     </div>
     <div class="r2c1 fill ioContainer">
       <div class="r1c1 fill">
         <!-- input id="inputString" type="radio"><label for="inputString">String</label>
         <input id="inputBytes" type="radio"><label for="inputBytes">Bytes</label -->
       </div>
-      <div contenteditable="true" id="input" class="r2c1 fill selectable"></div>
+      <div contenteditable="true" id="input" class="r2c1 fill selectable monofont"></div>
       <!-- textarea id="input" class="r2c1 fill selectable"></textarea -->
+      <div id="inputstatus" class="r3c1 fill status"></div>
     </div>
     <div id="pipeList" class="r2c2 fill"></div>
     <div class="r2c3 fill ioContainer">
@@ -29,7 +30,8 @@
         <input id="outputBytes" type="radio"><label for="outputBytes">Bytes</label -->
       </div>
       <!-- textarea readonly id="output" class="r2c1 fill selectable"></textarea -->
-      <div id="output" class="r2c1 fill selectable"></div>
+      <div id="output" class="r2c1 fill selectable monofont"></div>
+      <div id="outputstatus" class="r3c1 fill status"></div>
     </div>
 
     <script src="cpList.js"></script>
@@ -37,5 +39,6 @@
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="title.js"></script>
   </body>
 </html>

@@ -14,6 +14,11 @@
             endOffset: ranges.length ? ranges[0].endOffset : -1
         };
 
+            document.getElementById("inputstatus").textContent = 
+                "Total " + inputAsString.data.length + ", " +
+                "Selection " + inputAsString.startOffset + ", " +
+                inputAsString.endOffset + "";
+
         selection.pipe.encodeAsync(utf8Encoder.encodeStringToUtf8Bytes(inputAsString)).then(outputAsBytes => {
             const outputAsString = utf8Encoder.decodeUtf8BytesToString(outputAsBytes);
             let data = outputAsString.data;
@@ -33,6 +38,10 @@
             }
 
             output.innerHTML = data;
+            document.getElementById("outputstatus").textContent = 
+                "Total " + outputAsString.data.length + ", " +
+                "Selection " + outputAsString.startOffset + ", " +
+                outputAsString.endOffset + "";
         }, error => {
             output.value = output.textContent = error;
         });
