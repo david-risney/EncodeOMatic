@@ -46,5 +46,12 @@
 
 }
 
+.center {
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;
+}
+
 .selectable { user-select: auto; }
 .notselectable { user-select: none; }
