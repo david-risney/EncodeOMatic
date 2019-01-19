@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="fill borderless notselectable">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +7,31 @@
     <title>Encode-O-Matic</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
+    <script src="node_modules/codepage/cptable.js"></script>
+    <script src="node_modules/codepage/cputils.js"></script>
   </head>
-  <body>
-    <h1>Encode-O-Matic</h1>
-    <textarea></textarea>
-    <textarea></textarea>
-    <input type="text"><button>+</button>
+  <body class="fill borderless page">
+    <h1 class="r1c1s3 fill borderless">Encode-O-Matic</h1>
+    <div class="r2c1 fill ioContainer">
+      <div class="r1c1 fill">
+        <!-- input id="inputString" type="radio"><label for="inputString">String</label>
+        <input id="inputBytes" type="radio"><label for="inputBytes">Bytes</label -->
+      </div>
+      <div contenteditable="true" id="input" class="r2c1 fill selectable"></div>
+      <!-- textarea id="input" class="r2c1 fill selectable"></textarea -->
+    </div>
+    <div id="pipeList" class="r2c2 fill"></div>
+    <div class="r2c3 fill ioContainer">
+      <div class="r1c1 fill">
+        <!-- input id="outputString" type="radio"><label for="outputString">String</label>
+        <input id="outputBytes" type="radio"><label for="outputBytes">Bytes</label -->
+      </div>
+      <!-- textarea readonly id="output" class="r2c1 fill selectable"></textarea -->
+      <div id="output" class="r2c1 fill selectable"></div>
+    </div>
 
+    <script src="cpList.js"></script>
+    <script src="factory.js"></script>
     <script src="index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
